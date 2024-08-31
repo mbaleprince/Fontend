@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>WestNile | Panel</title>
+    <link rel="icon" href="Assets/icons/YouTube.png" type="image/x-icon"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+    
+    <!-- css-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"/>
+    <link rel="stylesheet" href="Bootstrap/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="Assets/css/general.css"/>
+    <link rel="stylesheet" href="Assets/css/header.css"/>
+    <link rel="stylesheet" href="Assets/css/video.css"/>
+    <link rel="stylesheet" href="Assets/css/sidebar.css"/>
+    <link rel="stylesheet" href="Assets/css/tooltip.css"/>
+    <link rel="stylesheet" href="Assets/css/responsive.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    
+    <!-- Script -->
+    <script src="Bootstrap/js/bootstrap.bundle.min.js"></script>
+
+</head>
+
+
+<body>
+<!-- header -->
+<nav class="header container-fluid nav">
+    <div class="left-section">
+
+        <a href="#"><img src="Assets/icons/list.svg" alt="" id="liveAlertBtn" class="hamburger-menu"/></a>
+
+        <!-- Logo here-->
+        <h2 class="mt-3 logo ms-2 fw-bolder video-title">WESTNILE</h2>
+    </div>
+</nav>
+
+<main>
+    <!-- sidebar -->
+    <section class="sidebar">
+        <div class="sidebar-link">
+            <img src="Assets/icons/plus-lg.svg" alt="">
+            <div>Create</div>
+        </div>
+
+        <div class="sidebar-link">
+            <img src="Assets/icons/film.svg" alt="">
+            <div>Video</div>
+        </div>
+
+        <div class="sidebar-link">
+            <img src="Assets/icons/music-note-beamed.svg" alt="">
+            <div>Audio</div>
+        </div>
+
+        <div class="sidebar-link">
+            <img src="Assets/icons/newspaper.svg" alt="">
+            <div>Blog</div>
+        </div>
+
+        <div class="sidebar-link">
+            <img src="Assets/icons/search.svg" alt="">
+            <div>Search</div>
+        </div>
+        
+        <div class="sidebar-link" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+            <img src="Assets/icons/three-dots.svg" alt="">
+            <div>More</div>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                <li><a class="dropdown-item">Control panel</a></li>
+                <li><a class="dropdown-item">Account settings</a></li>
+                <li><a class="dropdown-item">Login or create account</a></li>
+                <li><a class="dropdown-item">Help</a></li>
+            </ul>
+        </div>
+    </section>
+
+    <!--Menu-->
+    <section>
+        <div id="liveAlertPlaceholder"></div>
+        <script src="Assets/js/menu.js"></script>
+    </section>
+    <!-- End of menu-->
+
+    <!-- Written-->
+
+    <section class="posts mb-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md col-lg-8 mb-4">
+                    <div class="row">
+
+                        <div class="col-lg-4 mb-3">
+                            <div class="card">
+                                <div class="card-body text-center">
+                                    <h4 class="fw-bolder text-primary">32</h4>
+                                    <p>Contents</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 mb-3">
+                            <div class="card">
+                                <div class="card-body text-center">
+                                    <h4 class="fw-bolder text-primary">2.3k</h4>
+                                    <p>Followers</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 mb-3">
+                            <div class="card">
+                                <div class="card-body text-center">
+                                    <h4 class="fw-bolder text-danger">3+</h4>
+                                    <p>Notifications</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+
+                    <div class="col-lg">
+                        <div class="container">
+                            <h4 class="fw-bolder mb-4">Contents</h4>
+                            <div class="table-responsive">
+                                <table class="table table-striped table table-hover">
+                                    <thead>
+                                        <tr>
+                                            <th>ID</th>
+                                            <th>Name</th>
+                                            <th>Date</th>
+                                            <th>Type</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>Inline & Block Elements in HTML | Sigma Web Development Course</td>
+                                            <td>10/Jun/2024</td>
+                                            <td>Audio</td>
+                                        </tr>
+                                        <tr>
+                                            <td>2</td>
+                                            <td>Python Full Course for free</td>
+                                            <td>11/Jun/2024</td>
+                                            <td>Blog</td>
+                                        </tr>
+                                        <tr>
+                                            <td>3</td>
+                                            <td>How to EARN ₹50,000 Per Month from HOME | Tanay Pratap Hindi</td>
+                                            <td>11/Jun/2024</td>
+                                            <td>Video</td>
+                                        </tr>
+                                        <tr>
+                                            <td>4</td>
+                                            <td>Mystery of World's Oldest Human | The Secret of Living 120+ years</td>
+                                            <td>11/Jun/2024</td>
+                                            <td>Audio</td>
+                                        </tr>
+                                        <tr>
+                                            <td>5</td>
+                                            <td>Going to Every Bollywood Star's House in Mumbai</td>
+                                            <td>11/Jun/2024</td>
+                                            <td>Blog</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <button class="btn btn-dark rounded-pill">See more</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Sidebar -->
+                <div class="col-lg-4">
+                    <h4 class="fw-bolder mb-4">Followers</h4>
+                    <div class="row">
+
+                        <div class="card-body border p-2 mb-3">
+                            <div class="video-info-grid">
+                                <div class="channel-picture">
+                                    <img src="Assets/logo/channel_07.jpg" alt=""/>
+                                </div>
+                                <div class="video-info ms-5">
+                                    <p class="video-title">
+                                        Mbale Prince
+                                    </p>
+                                    <p class="video-author" chanel-title="Dhruv Rathee">290 contents</p>
+                                    <button class="btn btn-outline-primary rounded-pill">Follow</button>
+                                    <button class="btn btn-primary rounded-pill" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">More</button>
+                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                        <li><a class="dropdown-item">Remove</a></li>
+                                        <li><a class="dropdown-item">About</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                          </div>
+
+                          <div class="card-body border p-2 mb-3">
+                            <div class="video-info-grid">
+                                <div class="channel-picture">
+                                    <img src="Assets/logo/channel_07.jpg" alt=""/>
+                                </div>
+                                <div class="video-info ms-5">
+                                    <p class="video-title">
+                                        Mbale Prince
+                                    </p>
+                                    <p class="video-author" chanel-title="Dhruv Rathee">290 contents</p>
+                                    <button class="btn btn-outline-primary rounded-pill">Follow</button>
+                                    <button class="btn btn-primary rounded-pill" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">More</button>
+                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                        <li><a class="dropdown-item">Remove</a></li>
+                                        <li><a class="dropdown-item">About</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                          </div>
+
+                          <div class="card-body border p-2 mb-3">
+                            <div class="video-info-grid">
+                                <div class="channel-picture">
+                                    <img src="Assets/logo/channel_07.jpg" alt=""/>
+                                </div>
+                                <div class="video-info ms-5">
+                                    <p class="video-title">
+                                        Mbale Prince
+                                    </p>
+                                    <p class="video-author" chanel-title="Dhruv Rathee">290 contents</p>
+                                    <button class="btn btn-outline-primary rounded-pill">Follow</button>
+                                    <button class="btn btn-primary rounded-pill" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">More</button>
+                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                        <li><a class="dropdown-item">Remove</a></li>
+                                        <li><a class="dropdown-item">About</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                          </div>
+
+                          <div class="card-body border p-2 mb-3">
+                            <div class="video-info-grid">
+                                <div class="channel-picture">
+                                    <img src="Assets/logo/channel_07.jpg" alt=""/>
+                                </div>
+                                <div class="video-info ms-5">
+                                    <p class="video-title">
+                                        Mbale Prince
+                                    </p>
+                                    <p class="video-author" chanel-title="Dhruv Rathee">290 contents</p>
+                                    <button class="btn btn-outline-primary rounded-pill">Follow</button>
+                                    <button class="btn btn-primary rounded-pill" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">More</button>
+                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                        <li><a class="dropdown-item">Remove</a></li>
+                                        <li><a class="dropdown-item">About</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                          </div>
+
+                          <button class="btn btn-dark rounded-pill">See more</button>
+                        
+                    </div>
+                    
+                </div>
+                <!-- End of Sidebar -->
+            </div>
+        </div>
+    </section>
+    
+    <!-- End of written-->
+
+</main>
+
+<footer class="footer">
+    <hr>
+    <div class="footer-intro">
+        <p>&copy; 2024 WestNile Media, all rights reserved</p>
+    </div>
+</footer>
+</body>
+</html>

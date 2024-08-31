@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>WestNile | Video</title>
+    <link rel="icon" href="Assets/icons/YouTube.png" type="image/x-icon"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+    <!-- Css-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"/>
+    <link rel="stylesheet" href="Bootstrap/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="Assets/css/general.css"/>
+    <link rel="stylesheet" href="Assets/css/header.css"/>
+    <link rel="stylesheet" href="Assets/css/video.css"/>
+    <link rel="stylesheet" href="Assets/css/sidebar.css">
+    <link rel="stylesheet" href="Assets/css/tooltip.css">
+    <link rel="stylesheet" href="Assets/css/responsive.css">
+    <link rel="stylesheet" href="Assets/css/footer.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
+
+    <!-- Js-->
+    <script src="Bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="Assets/js/main.js"></script>
+</head>
+
+
+<body>
+<!-- header -->
+<nav class="header container-fluid nav">
+    <div class="left-section">
+
+        <div type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+            <img src="Assets/icons/list.svg" alt="" class="hamburger-menu"/>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                <li><a class="dropdown-item">
+                    <div class="sidebar-link">
+                        <img src="Assets/icons/plus-lg.svg" alt="">
+                        <div>Create</div>
+                    </div>
+                </a></li>
+                <li><a class="dropdown-item">
+                    <div class="sidebar-link">
+                        <img src="Assets/icons/film.svg" alt="">
+                        <div>Video</div>
+                    </div>
+                </a></li>
+                <li><a class="dropdown-item">
+                    <div class="sidebar-link">
+                        <img src="Assets/icons/music-note-beamed.svg" alt="">
+                        <div>Audio</div>
+                    </div>
+                </a></li>
+                <li><a class="dropdown-item">
+                    <div class="sidebar-link">
+                        <img src="Assets/icons/newspaper.svg" alt="">
+                        <div>Blog</div>
+                    </div>
+                </a></li>
+                <li><a class="dropdown-item">
+                    <div class="sidebar-link">
+                        <img src="Assets/icons/search.svg" alt="">
+                        <div>Search</div>
+                    </div>
+                </a></li>
+            </ul>
+        </div>
+
+        <!-- Logo here-->
+        <h2 class="mt-3 logo ms-2 fw-bolder video-title">WESTNILE</h2>
+    </div>
+</nav>
+
+<main>
+    <!-- sidebar -->
+    <section class="sidebar">
+        <div class="sidebar-link">
+            <img src="Assets/icons/plus-lg.svg" alt="">
+            <div>Create</div>
+        </div>
+
+        <div class="sidebar-link">
+            <img src="Assets/icons/film.svg" alt="">
+            <div>Video</div>
+        </div>
+
+        <div class="sidebar-link">
+            <img src="Assets/icons/music-note-beamed.svg" alt="">
+            <div>Audio</div>
+        </div>
+
+        <div class="sidebar-link">
+            <img src="Assets/icons/newspaper.svg" alt="">
+            <div>Blog</div>
+        </div>
+
+        <div class="sidebar-link">
+            <img src="Assets/icons/search.svg" alt="">
+            <div>Search</div>
+        </div>
+        
+        <div class="sidebar-link" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+            <img src="Assets/icons/three-dots.svg" alt="">
+            <div>More</div>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                <li><a class="dropdown-item">Control panel</a></li>
+                <li><a class="dropdown-item">Account settings</a></li>
+                <li><a class="dropdown-item">Login or create account</a></li>
+                <li><a class="dropdown-item">Help</a></li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Tags -->
+    <section>
+        <div class="container-fluid">
+            <div class="col-lg">
+                <button class="btn btn-primary rounded-pill video-title">Latest</button>
+                <button class="btn btn-secondary rounded-pill video-title">Most viewed</button>
+                <button class="btn btn-secondary rounded-pill video-title">Voted true</button>
+                <button class="btn btn-secondary rounded-pill video-title">Recommended</button>
+            </div>
+        </div>
+    </section>
+    <!-- End of tags -->
+
+    <!-- video -->
+    <section class="video-grid">
+        <div class="video-preview">
+            <div class="thumbnail-row">
+                <img
+                        class="thumbnail"
+                        src="Assets/thumbnails/thumbnail4.jpg"
+                        alt=""
+                />
+                <div class="video-time">
+                    12:00:00
+                </div>
+            </div>
+            <div class="video-info-grid">
+                <div class="channel-picture">
+                    <img
+                            class="profile-picture"
+                            src="Assets/logo/channel_04.jpg"
+                            alt=""
+                    />
+                </div>
+                <div class="video-info">
+                    <p class="video-title">Python Full Course for free 🐍</p>
+                    <p class="video-author" chanel-title="Bro Code">Bro Code <i class="bi bi-patch-check-fill text-primary"></i></p>
+                    <p class="video-stats">13M views &#183; 1 year ago</p>
+                </div>
+            </div>
+        </div>
+        <div class="video-preview">
+            <div class="thumbnail-row">
+                <img
+                        class="thumbnail"
+                        src="Assets/thumbnails/thumbnail5.jpg"
+                        alt=""
+                />
+                <div class="video-time">
+                    10:52
+                </div>
+            </div>
+            <div class="video-info-grid">
+                <div class="channel-picture">
+                    <img
+                            class="profile-picture"
+                            src="Assets/logo/channel_05.jpg"
+                            alt=""
+                    />
+                </div>
+                <div class="video-info">
+                    <p class="video-title">
+                        Inline & Block Elements in HTML | Sigma Web Development Course
+                    </p>
+                    <p class="video-author" chanel-title="CodeWithHarry">CodeWithHarry</p>
+                    <p class="video-stats">45K views &#183; 2 days ago</p>
+                </div>
+            </div>
+        </div>
+        <div class="video-preview">
+            <div class="thumbnail-row">
+                <img
+                        class="thumbnail"
+                        src="Assets/thumbnails/thumbnail6.jpg"
+                        alt=""
+                />
+                <div class="video-time">
+                    24:17
+                </div>
+            </div>
+            <div class="video-info-grid">
+                <div class="channel-picture">
+                    <img
+                            class="profile-picture"
+                            src="Assets/logo/channel_06.jpg"
+                            alt=""
+                    />
+                </div>
+                <div class="video-info">
+                    <p class="video-title">
+                        How to EARN ₹50,000 Per Month from HOME | Tanay Pratap Hindi
+                    </p>
+                    <p class="video-author" chanel-title="Tanay Pratap">Tanay Pratap</p>
+                    <p class="video-stats">143K views &#183; 2 months ago</p>
+                </div>
+            </div>
+        </div>
+        <div class="video-preview">
+            <div class="thumbnail-row">
+                <img
+                        class="thumbnail"
+                        src="Assets/thumbnails/thumbnail7.jpg"
+                        alt=""
+                />
+                <div class="video-time">
+                    22:16
+                </div>
+            </div>
+            <div class="video-info-grid">
+                <div class="channel-picture">
+                    <img
+                            class="profile-picture"
+                            src="Assets/logo/channel_07.jpg"
+                            alt=""
+                    />
+                </div>
+                <div class="video-info">
+                    <p class="video-title">
+                        Mystery of World's Oldest Human | The Secret of Living 120+ years
+                    </p>
+                    <p class="video-author" chanel-title="Dhruv Rathee">Dhruv Rathee</p>
+                    <p class="video-stats">3.7M views &#183; 5 days ago</p>
+                </div>
+            </div>
+        </div>
+        <div class="video-preview">
+            <div class="thumbnail-row">
+                <img
+                        class="thumbnail"
+                        src="Assets/thumbnails/thumbnail8.jpg"
+                        alt=""
+                />
+                <div class="video-time">
+                    15:49
+                </div>
+            </div>
+            <div class="video-info-grid">
+                <div class="channel-picture">
+                    <img
+                            class="profile-picture"
+                            src="Assets/logo/channel_08.jpg"
+                            alt=""
+                    />
+                </div>
+                <div class="video-info">
+                    <p class="video-title">
+                        1 Year Journey of our Special Project ! *layers.shop*
+                    </p>
+                    <p class="video-author" chanel-title="Tech Burner">Tech Burner</p>
+                    <p class="video-stats">670K views &#183; 5 days ago</p>
+                </div>
+            </div>
+        </div>
+        <div class="video-preview">
+            <div class="thumbnail-row">
+                <img
+                        class="thumbnail"
+                        src="Assets/thumbnails/thumbnail9.jpg"
+                        alt=""
+                />
+                <div class="video-time">
+                    13:44
+                </div>
+            </div>
+            <div class="video-info-grid">
+                <div class="channel-picture">
+                    <img
+                            class="profile-picture"
+                            src="Assets/logo/channel_09.jpg"
+                            alt=""
+                    />
+
+                </div>
+                <div class="video-info">
+                    <p class="video-title">
+                        Going to Every Bollywood Star's House in Mumbai
+                    </p>
+                    <p class="video-author" chanel-title="Slayy Point">Slayy Point</p>
+                    <p class="video-stats">4.2M views &#183; 3 days ago</p>
+                </div>
+            </div>
+        </div>
+        <div class="video-preview">
+            <div class="thumbnail-row">
+                <img
+                        class="thumbnail"
+                        src="Assets/thumbnails/thumbnail1.jpg"
+                        alt=""
+                />
+                <div class="video-time">
+                    6:31:24
+                </div>
+            </div>
+            <div class="video-info-grid">
+                <div class="channel-picture">
+                    <img
+                            class="profile-picture"
+                            src="Assets/logo/channel_01.jpg"
+                            alt=""
+                    />
+                </div>
+                <div class="video-info">
+                    <p class="video-title">
+                        HTML, CSS Full Course-Beginner to Pro-learn in one video
+                    </p>
+                    <p class="video-author" chanel-title="SuperSimpleDev">SuperSimpleDev</p>
+                    <p class="video-stats">6.1M views &#183; 1 year ago</p>
+                </div>
+            </div>
+        </div>
+        <div class="video-preview">
+            <div class="thumbnail-row">
+                <img
+                        class="thumbnail"
+                        src="Assets/thumbnails/thumbnail2.jpg"
+                        alt=""
+                />
+                <div class="video-time">
+                    13:10
+                </div>
+            </div>
+            <div class="video-info-grid">
+                <div class="channel-picture">
+                    <img
+                            class="profile-picture"
+                            src="Assets/logo/channel_02.jpg"
+                            alt=""
+                    />
+                </div>
+                <div class="video-info">
+                    <p class="video-title">
+                        How to Find Remote Jobs?
+                    </p>
+                    <p class="video-author" chanel-title="Kunal Kushwaha">Kunal Kushwaha</p>
+                    <p class="video-stats">45K views &#183; 2 weeks ago</p>
+                </div>
+            </div>
+        </div>
+        <div class="video-preview">
+            <div class="thumbnail-row">
+                <img
+                        class="thumbnail"
+                        src="Assets/thumbnails/thumbnail3.jpg"
+                        alt=""
+                />
+                <div class="video-time">
+                    14:20
+                </div>
+            </div>
+            <div class="video-info-grid">
+                <div class="channel-picture">
+                    <img
+                            class="profile-picture"
+                            src="Assets/logo/channel_03.jpg"
+                            alt=""
+                    />
+                </div>
+                <div class="video-info">
+                    <p class="video-title">
+                        Purgatory King👑 Best Br Gameplay 17Kills With New Anime Bundle
+                    </p>
+                    <p class="video-author" chanel-title="Gyan Gamming">Gyan Gamming</p>
+                    <p class="video-stats">6.1M views &#183; 3 year ago</p>
+                </div>
+            </div>
+        </div>
+        <div class="video-preview">
+            <div class="thumbnail-row">
+                <img
+                        class="thumbnail"
+                        src="Assets/thumbnails/thumbnail10.jpg"
+                        alt=""
+                />
+                <div class="video-time">
+                    3:11
+                </div>
+            </div>
+            <div class="video-info-grid">
+                <div class="channel-picture">
+                    <img
+                            class="profile-picture"
+                            src="Assets/logo/channel_10.jpg"
+                            alt=""
+                    />
+                </div>
+                <div class="video-info">
+                    <p class="video-title">
+                        Top Gun: Maverick (2022) - Maverick's Test Run Scene | Movieclips
+                    </p>
+                    <p class="video-author" chanel-title="Movieclips">Movieclips</p>
+                    <p class="video-stats">8.5M views &#183; 1 year ago</p>
+                </div>
+            </div>
+        </div>
+        <div class="video-preview">
+            <div class="thumbnail-row">
+                <img
+                        class="thumbnail"
+                        src="Assets/thumbnails/thumbnail11.jpg"
+                        alt=""
+                />
+                <div class="video-time">
+                    7:44:20
+                </div>
+            </div>
+            <div class="video-info-grid">
+                <div class="channel-picture">
+                    <img
+                            class="profile-picture"
+                            src="Assets/logo/channel_11.jpg"
+                            alt=""
+                    />
+                </div>
+                <div class="video-info">
+                    <p class="video-title">
+                        JavaScript Programming - Full Course
+                    </p>
+                    <p class="video-author" chanel-title="freeCodeCamp.org">freeCodeCamp.org</p>
+                    <p class="video-stats">3.1M views &#183; 2 year ago</p>
+                </div>
+            </div>
+        </div>
+        <div class="video-preview">
+            <div class="thumbnail-row">
+                <img
+                        class="thumbnail"
+                        src="Assets/thumbnails/thumbnail12.jpg"
+                        alt=""
+                />
+                <div class="video-time">
+                    53:13
+                </div>
+            </div>
+            <div class="video-info-grid">
+                <div class="channel-picture">
+                    <img
+                            class="profile-picture"
+                            src="Assets/logo/channel_12.jpg"
+                            alt=""
+                    />
+                </div>
+                <div class="video-info">
+                    <p class="video-title">
+                        Live Mock Interview with @Striver | MAANG Format | GeeksforGeeks
+                    </p>
+                    <p class="video-author" chanel-title="GeeksforGeeks">GeeksforGeeks</p>
+                    <p class="video-stats">77K views &#183; Streamed 1 year ago</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Floating action button -->
+    <div class="fab-wrapper">
+        <input id="fabCheckbox" type="checkbox" class="fab-checkbox" />
+        <label class="fab" for="fabCheckbox">
+            <div class="notifications-icon-container">
+                <img src="Assets/icons/bell.svg" class="notifications-icon ms-2 ps-1 pt-1 mt-2" data-title="Notifications" alt=""/>
+                <div class="notifications-count">3</div>
+            </div>
+        </label>
+      </div>
+
+    <!-- Pagination-->
+    <section>
+        <div class="container-fluid mt-4">
+            <nav aria-label="Page navigation example">
+                <ul class="pagination justify-content-center">
+                  <li class="page-item disabled">
+                    <a class="page-link"><p class="text-dark">Previous</p></a>
+                  </li>
+                  <li class="page-item"><a class="page-link" href="#"><p class="text-dark">1</p></a></li>
+                  <li class="page-item"><a class="page-link" href="#"><p class="text-dark">2</p></a></li>
+                  <li class="page-item"><a class="page-link" href="#"><p class="text-dark">3</p></a></li>
+                  <li class="page-item">
+                    <a class="page-link" href="#"><p class="text-dark">Next</p></a>
+                  </li>
+                </ul>
+              </nav>
+        </div>
+    </section>
+    <!-- Pagination end -->
+</main>
+
+<footer class="footer">
+    <hr>
+    <div class="footer-intro">
+        <p class="text-dark">&copy; 2024 WestNile Media, all rights reserved</p>
+    </div>
+</footer>
+</body>
+</html>

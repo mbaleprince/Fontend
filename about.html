@@ -1,0 +1,919 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>WestNile | About</title>
+    <link rel="icon" href="Assets/icons/YouTube.png" type="image/x-icon"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+    <!-- Css-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"/>
+    <link rel="stylesheet" href="Bootstrap/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="Assets/css/general.css"/>
+    <link rel="stylesheet" href="Assets/css/header.css"/>
+    <link rel="stylesheet" href="Assets/css/video.css"/>
+    <link rel="stylesheet" href="Assets/css/sidebar.css">
+    <link rel="stylesheet" href="Assets/css/tooltip.css">
+    <link rel="stylesheet" href="Assets/css/responsive.css">
+    <link rel="stylesheet" href="Assets/css/footer.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
+
+    <!-- Js-->
+    <script src="Bootstrap/js/bootstrap.bundle.min.js"></script>
+</head>
+
+
+<body>
+<!-- header -->
+<nav class="header container-fluid nav">
+    <div class="left-section">
+
+        <a href="#"><img src="Assets/icons/list.svg" alt="" id="liveAlertBtn" class="hamburger-menu"/></a>
+
+        <!-- Logo here-->
+        <h2 class="mt-3 logo ms-2 fw-bolder video-title">WESTNILE</h2>
+    </div>
+</nav>
+
+<main>
+    <!-- sidebar -->
+    <section class="sidebar">
+        <div class="sidebar-link">
+            <img src="Assets/icons/plus-lg.svg" alt="">
+            <div>Create</div>
+        </div>
+
+        <div class="sidebar-link">
+            <img src="Assets/icons/film.svg" alt="">
+            <div>Video</div>
+        </div>
+
+        <div class="sidebar-link">
+            <img src="Assets/icons/music-note-beamed.svg" alt="">
+            <div>Audio</div>
+        </div>
+
+        <div class="sidebar-link">
+            <img src="Assets/icons/newspaper.svg" alt="">
+            <div>Blog</div>
+        </div>
+
+        <div class="sidebar-link">
+            <img src="Assets/icons/search.svg" alt="">
+            <div>Search</div>
+        </div>
+        
+        <div class="sidebar-link" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+            <img src="Assets/icons/three-dots.svg" alt="">
+            <div>More</div>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                <li><a class="dropdown-item">Control panel</a></li>
+                <li><a class="dropdown-item">Account settings</a></li>
+                <li><a class="dropdown-item">Login or create account</a></li>
+                <li><a class="dropdown-item">Help</a></li>
+            </ul>
+        </div>
+    </section>
+
+    <!--Menu-->
+    <section>
+        <div id="liveAlertPlaceholder"></div>
+        <script src="Assets/js/menu.js"></script>
+    </section>
+    <!-- End of menu-->
+
+    <!-- About header-->
+    <section>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="video-info-grid">
+                        <div class="channel-picture">
+                            <img
+                                    class="profile-picture"
+                                    src="Assets/logo/channel_04.jpg"
+                                    alt=""
+                            />
+                        </div>
+                        <div class="video-info">
+                            <p class="video-title fw-bolder">Mbale Prince</p>
+                            <p class="video-stats fw-bolder">Joined &#183; 1 year ago || Content &#183; 233 || Followers &#183; 27</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <button class="btn btn-outline-danger rounded-pill mt-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-people" viewBox="0 0 16 16">
+                            <path d="M15 14s1 0 1-1-1-4-5-4-5 3-5 4 1 1 1 1zm-7.978-1L7 12.996c.001-.264.167-1.03.76-1.72C8.312 10.629 9.282 10 11 10c1.717 0 2.687.63 3.24 1.276.593.69.758 1.457.76 1.72l-.008.002-.014.002zM11 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4m3-2a3 3 0 1 1-6 0 3 3 0 0 1 6 0M6.936 9.28a6 6 0 0 0-1.23-.247A7 7 0 0 0 5 9c-4 0-5 3-5 4q0 1 1 1h4.216A2.24 2.24 0 0 1 5 13c0-1.01.377-2.042 1.09-2.904.243-.294.526-.569.846-.816M4.92 10A5.5 5.5 0 0 0 4 13H1c0-.26.164-1.03.76-1.724.545-.636 1.492-1.256 3.16-1.275ZM1.5 5.5a3 3 0 1 1 6 0 3 3 0 0 1-6 0m3-2a2 2 0 1 0 0 4 2 2 0 0 0 0-4"/>
+                          </svg>
+                        Follow</button>
+                    <button class="btn btn-primary rounded-pill mt-4" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">More</button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                        <li><a class="dropdown-item">Leave message</a></li>
+                        <li><a class="dropdown-item">See followers</a></li>
+                        <li><a class="dropdown-item">View playlists</a></li>
+                        <li><a class="dropdown-item">Report</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="container">
+                <div id="content" class="mb-4 mt-4">
+                    <p class="text-secondary">I loved those first tours. Bouncing off a sweaty stage in an Edinburgh catacomb we then had
+                        to get to a gig in Camden by lunch the next day. We couldn’t fit all four of us and Ted’s
+                        double-bass into the VW Polo. I think it was Ben who drew the short-straw and had to follow
+                        by train with his keyboard. I remember blitzing it down the M6 through the night, the lads
+                        asleep beside me. We made it but my voice sadly didn’t, completely shot by exhaustion, I had
+                        to mime my harmonies. Being in Mumford & Sons was exhilarating.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End of about header-->
+
+    <!-- Contents summary -->
+    <section>
+        <nav>
+            <div class="nav nav-tabs" id="nav-tab" role="tablist">
+              <button class="nav-link text-secondary active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">Video <span class="badge rounded-pill bg-primary">33</span></button>
+              <button class="nav-link text-secondary" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Audio <span class="badge rounded-pill bg-primary">13</span></button>
+              <button class="nav-link text-secondary" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">Blog <span class="badge rounded-pill bg-primary">56</span></button>
+            </div>
+          </nav>
+          <div class="tab-content" id="nav-tabContent">
+            <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+                <!-- Video tab-->
+
+                <section class="video-grid mt-4 mb-4">
+                    <div class="video-preview">
+                        <div class="thumbnail-row">
+                            <img
+                                    class="thumbnail"
+                                    src="Assets/thumbnails/thumbnail4.jpg"
+                                    alt=""
+                            />
+                            <div class="video-time">
+                                12:00:00
+                            </div>
+                        </div>
+                        <div class="video-info-grid">
+                            <div class="channel-picture">
+                                <img
+                                        class="profile-picture"
+                                        src="Assets/logo/channel_04.jpg"
+                                        alt=""
+                                />
+                            </div>
+                            <div class="video-info">
+                                <p class="video-title">Python Full Course for free 🐍</p>
+                                <p class="video-author" chanel-title="Bro Code">Bro Code</p>
+                                <p class="video-stats">13M views &#183; 1 year ago</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="video-preview">
+                        <div class="thumbnail-row">
+                            <img
+                                    class="thumbnail"
+                                    src="Assets/thumbnails/thumbnail5.jpg"
+                                    alt=""
+                            />
+                            <div class="video-time">
+                                10:52
+                            </div>
+                        </div>
+                        <div class="video-info-grid">
+                            <div class="channel-picture">
+                                <img
+                                        class="profile-picture"
+                                        src="Assets/logo/channel_05.jpg"
+                                        alt=""
+                                />
+                            </div>
+                            <div class="video-info">
+                                <p class="video-title">
+                                    Inline & Block Elements in HTML | Sigma Web Development Course
+                                </p>
+                                <p class="video-author" chanel-title="CodeWithHarry">CodeWithHarry</p>
+                                <p class="video-stats">45K views &#183; 2 days ago</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="video-preview">
+                        <div class="thumbnail-row">
+                            <img
+                                    class="thumbnail"
+                                    src="Assets/thumbnails/thumbnail6.jpg"
+                                    alt=""
+                            />
+                            <div class="video-time">
+                                24:17
+                            </div>
+                        </div>
+                        <div class="video-info-grid">
+                            <div class="channel-picture">
+                                <img
+                                        class="profile-picture"
+                                        src="Assets/logo/channel_06.jpg"
+                                        alt=""
+                                />
+                            </div>
+                            <div class="video-info">
+                                <p class="video-title">
+                                    How to EARN ₹50,000 Per Month from HOME | Tanay Pratap Hindi
+                                </p>
+                                <p class="video-author" chanel-title="Tanay Pratap">Tanay Pratap</p>
+                                <p class="video-stats">143K views &#183; 2 months ago</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="video-preview">
+                        <div class="thumbnail-row">
+                            <img
+                                    class="thumbnail"
+                                    src="Assets/thumbnails/thumbnail7.jpg"
+                                    alt=""
+                            />
+                            <div class="video-time">
+                                22:16
+                            </div>
+                        </div>
+                        <div class="video-info-grid">
+                            <div class="channel-picture">
+                                <img
+                                        class="profile-picture"
+                                        src="Assets/logo/channel_07.jpg"
+                                        alt=""
+                                />
+                            </div>
+                            <div class="video-info">
+                                <p class="video-title">
+                                    Mystery of World's Oldest Human | The Secret of Living 120+ years
+                                </p>
+                                <p class="video-author" chanel-title="Dhruv Rathee">Dhruv Rathee</p>
+                                <p class="video-stats">3.7M views &#183; 5 days ago</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="video-preview">
+                        <div class="thumbnail-row">
+                            <img
+                                    class="thumbnail"
+                                    src="Assets/thumbnails/thumbnail8.jpg"
+                                    alt=""
+                            />
+                            <div class="video-time">
+                                15:49
+                            </div>
+                        </div>
+                        <div class="video-info-grid">
+                            <div class="channel-picture">
+                                <img
+                                        class="profile-picture"
+                                        src="Assets/logo/channel_08.jpg"
+                                        alt=""
+                                />
+                            </div>
+                            <div class="video-info">
+                                <p class="video-title">
+                                    1 Year Journey of our Special Project ! *layers.shop*
+                                </p>
+                                <p class="video-author" chanel-title="Tech Burner">Tech Burner</p>
+                                <p class="video-stats">670K views &#183; 5 days ago</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="video-preview">
+                        <div class="thumbnail-row">
+                            <img
+                                    class="thumbnail"
+                                    src="Assets/thumbnails/thumbnail9.jpg"
+                                    alt=""
+                            />
+                            <div class="video-time">
+                                13:44
+                            </div>
+                        </div>
+                        <div class="video-info-grid">
+                            <div class="channel-picture">
+                                <img
+                                        class="profile-picture"
+                                        src="Assets/logo/channel_09.jpg"
+                                        alt=""
+                                />
+            
+                            </div>
+                            <div class="video-info">
+                                <p class="video-title">
+                                    Going to Every Bollywood Star's House in Mumbai
+                                </p>
+                                <p class="video-author" chanel-title="Slayy Point">Slayy Point</p>
+                                <p class="video-stats">4.2M views &#183; 3 days ago</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="video-preview">
+                        <div class="thumbnail-row">
+                            <img
+                                    class="thumbnail"
+                                    src="Assets/thumbnails/thumbnail1.jpg"
+                                    alt=""
+                            />
+                            <div class="video-time">
+                                6:31:24
+                            </div>
+                        </div>
+                        <div class="video-info-grid">
+                            <div class="channel-picture">
+                                <img
+                                        class="profile-picture"
+                                        src="Assets/logo/channel_01.jpg"
+                                        alt=""
+                                />
+                            </div>
+                            <div class="video-info">
+                                <p class="video-title">
+                                    HTML, CSS Full Course-Beginner to Pro-learn in one video
+                                </p>
+                                <p class="video-author" chanel-title="SuperSimpleDev">SuperSimpleDev</p>
+                                <p class="video-stats">6.1M views &#183; 1 year ago</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="video-preview">
+                        <div class="thumbnail-row">
+                            <img
+                                    class="thumbnail"
+                                    src="Assets/thumbnails/thumbnail2.jpg"
+                                    alt=""
+                            />
+                            <div class="video-time">
+                                13:10
+                            </div>
+                        </div>
+                        <div class="video-info-grid">
+                            <div class="channel-picture">
+                                <img
+                                        class="profile-picture"
+                                        src="Assets/logo/channel_02.jpg"
+                                        alt=""
+                                />
+                            </div>
+                            <div class="video-info">
+                                <p class="video-title">
+                                    How to Find Remote Jobs?
+                                </p>
+                                <p class="video-author" chanel-title="Kunal Kushwaha">Kunal Kushwaha</p>
+                                <p class="video-stats">45K views &#183; 2 weeks ago</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="video-preview">
+                        <div class="thumbnail-row">
+                            <img
+                                    class="thumbnail"
+                                    src="Assets/thumbnails/thumbnail3.jpg"
+                                    alt=""
+                            />
+                            <div class="video-time">
+                                14:20
+                            </div>
+                        </div>
+                        <div class="video-info-grid">
+                            <div class="channel-picture">
+                                <img
+                                        class="profile-picture"
+                                        src="Assets/logo/channel_03.jpg"
+                                        alt=""
+                                />
+                            </div>
+                            <div class="video-info">
+                                <p class="video-title">
+                                    Purgatory King👑 Best Br Gameplay 17Kills With New Anime Bundle
+                                </p>
+                                <p class="video-author" chanel-title="Gyan Gamming">Gyan Gamming</p>
+                                <p class="video-stats">6.1M views &#183; 3 year ago</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="video-preview">
+                        <div class="thumbnail-row">
+                            <img
+                                    class="thumbnail"
+                                    src="Assets/thumbnails/thumbnail10.jpg"
+                                    alt=""
+                            />
+                            <div class="video-time">
+                                3:11
+                            </div>
+                        </div>
+                        <div class="video-info-grid">
+                            <div class="channel-picture">
+                                <img
+                                        class="profile-picture"
+                                        src="Assets/logo/channel_10.jpg"
+                                        alt=""
+                                />
+                            </div>
+                            <div class="video-info">
+                                <p class="video-title">
+                                    Top Gun: Maverick (2022) - Maverick's Test Run Scene | Movieclips
+                                </p>
+                                <p class="video-author" chanel-title="Movieclips">Movieclips</p>
+                                <p class="video-stats">8.5M views &#183; 1 year ago</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="video-preview">
+                        <div class="thumbnail-row">
+                            <img
+                                    class="thumbnail"
+                                    src="Assets/thumbnails/thumbnail11.jpg"
+                                    alt=""
+                            />
+                            <div class="video-time">
+                                7:44:20
+                            </div>
+                        </div>
+                        <div class="video-info-grid">
+                            <div class="channel-picture">
+                                <img
+                                        class="profile-picture"
+                                        src="Assets/logo/channel_11.jpg"
+                                        alt=""
+                                />
+                            </div>
+                            <div class="video-info">
+                                <p class="video-title">
+                                    JavaScript Programming - Full Course
+                                </p>
+                                <p class="video-author" chanel-title="freeCodeCamp.org">freeCodeCamp.org</p>
+                                <p class="video-stats">3.1M views &#183; 2 year ago</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="video-preview">
+                        <div class="thumbnail-row">
+                            <img
+                                    class="thumbnail"
+                                    src="Assets/thumbnails/thumbnail12.jpg"
+                                    alt=""
+                            />
+                            <div class="video-time">
+                                53:13
+                            </div>
+                        </div>
+                        <div class="video-info-grid">
+                            <div class="channel-picture">
+                                <img
+                                        class="profile-picture"
+                                        src="Assets/logo/channel_12.jpg"
+                                        alt=""
+                                />
+                            </div>
+                            <div class="video-info">
+                                <p class="video-title">
+                                    Live Mock Interview with @Striver | MAANG Format | GeeksforGeeks
+                                </p>
+                                <p class="video-author" chanel-title="GeeksforGeeks">GeeksforGeeks</p>
+                                <p class="video-stats">77K views &#183; Streamed 1 year ago</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- End of video tab-->
+            </div>
+            <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+                <!-- Audio tab -->
+
+                <section>
+                    <div class="container-fluid mt-4 mb-4">
+                        <div class="row">
+                            <div class="col-lg-4">
+                                <div class="card-body border p-2 mb-3">
+                                    <div class="video-info-grid">
+                                        <div class="channel-picture">
+                                            <img src="Assets/logo/channel_07.jpg" alt=""/>
+                                        </div>
+                                        <div class="video-info ms-5">
+                                            <p class="video-title">
+                                                Mystery of World's Oldest Human | The Secret of Living 120+ years
+                                            </p>
+                                            <p class="video-author" chanel-title="Dhruv Rathee">Dhruv Rathee</p>
+                                            <p class="video-stats">3.7M views &#183; 5 days ago</p>
+                                        </div>
+                                    </div>
+                                  </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="card-body border p-2 mb-3">
+                                    <div class="video-info-grid">
+                                        <div class="channel-picture">
+                                            <img src="Assets/logo/channel_07.jpg" alt=""/>
+                                        </div>
+                                        <div class="video-info ms-5">
+                                            <p class="video-title">
+                                                Mystery of World's Oldest Human | The Secret of Living 120+ years
+                                            </p>
+                                            <p class="video-author" chanel-title="Dhruv Rathee">Dhruv Rathee</p>
+                                            <p class="video-stats">3.7M views &#183; 5 days ago</p>
+                                        </div>
+                                    </div>
+                                  </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="card-body border p-2 mb-3">
+                                    <div class="video-info-grid">
+                                        <div class="channel-picture">
+                                            <img src="Assets/logo/channel_07.jpg" alt=""/>
+                                        </div>
+                                        <div class="video-info ms-5">
+                                            <p class="video-title">
+                                                Mystery of World's Oldest Human | The Secret of Living 120+ years
+                                            </p>
+                                            <p class="video-author" chanel-title="Dhruv Rathee">Dhruv Rathee</p>
+                                            <p class="video-stats">3.7M views &#183; 5 days ago</p>
+                                        </div>
+                                    </div>
+                                  </div>
+                            </div>
+            
+                            <!-- Repeating for control-->
+                            <div class="col-lg-4">
+                                <div class="card-body border p-2 mb-3">
+                                    <div class="video-info-grid">
+                                        <div class="channel-picture">
+                                            <img src="Assets/logo/channel_07.jpg" alt=""/>
+                                        </div>
+                                        <div class="video-info ms-5">
+                                            <p class="video-title">
+                                                Mystery of World's Oldest Human | The Secret of Living 120+ years
+                                            </p>
+                                            <p class="video-author" chanel-title="Dhruv Rathee">Dhruv Rathee</p>
+                                            <p class="video-stats">3.7M views &#183; 5 days ago</p>
+                                        </div>
+                                    </div>
+                                  </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="card-body border p-2 mb-3">
+                                    <div class="video-info-grid">
+                                        <div class="channel-picture">
+                                            <img src="Assets/logo/channel_07.jpg" alt=""/>
+                                        </div>
+                                        <div class="video-info ms-5">
+                                            <p class="video-title">
+                                                Mystery of World's Oldest Human | The Secret of Living 120+ years
+                                            </p>
+                                            <p class="video-author" chanel-title="Dhruv Rathee">Dhruv Rathee</p>
+                                            <p class="video-stats">3.7M views &#183; 5 days ago</p>
+                                        </div>
+                                    </div>
+                                  </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="card-body border p-2 mb-3">
+                                    <div class="video-info-grid">
+                                        <div class="channel-picture">
+                                            <img src="Assets/logo/channel_07.jpg" alt=""/>
+                                        </div>
+                                        <div class="video-info ms-5">
+                                            <p class="video-title">
+                                                Mystery of World's Oldest Human | The Secret of Living 120+ years
+                                            </p>
+                                            <p class="video-author" chanel-title="Dhruv Rathee">Dhruv Rathee</p>
+                                            <p class="video-stats">3.7M views &#183; 5 days ago</p>
+                                        </div>
+                                    </div>
+                                  </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="card-body border p-2 mb-3">
+                                    <div class="video-info-grid">
+                                        <div class="channel-picture">
+                                            <img src="Assets/logo/channel_07.jpg" alt=""/>
+                                        </div>
+                                        <div class="video-info ms-5">
+                                            <p class="video-title">
+                                                Mystery of World's Oldest Human | The Secret of Living 120+ years
+                                            </p>
+                                            <p class="video-author" chanel-title="Dhruv Rathee">Dhruv Rathee</p>
+                                            <p class="video-stats">3.7M views &#183; 5 days ago</p>
+                                        </div>
+                                    </div>
+                                  </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="card-body border p-2 mb-3">
+                                    <div class="video-info-grid">
+                                        <div class="channel-picture">
+                                            <img src="Assets/logo/channel_07.jpg" alt=""/>
+                                        </div>
+                                        <div class="video-info ms-5">
+                                            <p class="video-title">
+                                                Mystery of World's Oldest Human | The Secret of Living 120+ years
+                                            </p>
+                                            <p class="video-author" chanel-title="Dhruv Rathee">Dhruv Rathee</p>
+                                            <p class="video-stats">3.7M views &#183; 5 days ago</p>
+                                        </div>
+                                    </div>
+                                  </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="card-body border p-2 mb-3">
+                                    <div class="video-info-grid">
+                                        <div class="channel-picture">
+                                            <img src="Assets/logo/channel_07.jpg" alt=""/>
+                                        </div>
+                                        <div class="video-info ms-5">
+                                            <p class="video-title">
+                                                Mystery of World's Oldest Human | The Secret of Living 120+ years
+                                            </p>
+                                            <p class="video-author" chanel-title="Dhruv Rathee">Dhruv Rathee</p>
+                                            <p class="video-stats">3.7M views &#183; 5 days ago</p>
+                                        </div>
+                                    </div>
+                                  </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="card-body border p-2 mb-3">
+                                    <div class="video-info-grid">
+                                        <div class="channel-picture">
+                                            <img src="Assets/logo/channel_07.jpg" alt=""/>
+                                        </div>
+                                        <div class="video-info ms-5">
+                                            <p class="video-title">
+                                                Mystery of World's Oldest Human | The Secret of Living 120+ years
+                                            </p>
+                                            <p class="video-author" chanel-title="Dhruv Rathee">Dhruv Rathee</p>
+                                            <p class="video-stats">3.7M views &#183; 5 days ago</p>
+                                        </div>
+                                    </div>
+                                  </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="card-body border p-2 mb-3">
+                                    <div class="video-info-grid">
+                                        <div class="channel-picture">
+                                            <img src="Assets/logo/channel_07.jpg" alt=""/>
+                                        </div>
+                                        <div class="video-info ms-5">
+                                            <p class="video-title">
+                                                Mystery of World's Oldest Human | The Secret of Living 120+ years
+                                            </p>
+                                            <p class="video-author" chanel-title="Dhruv Rathee">Dhruv Rathee</p>
+                                            <p class="video-stats">3.7M views &#183; 5 days ago</p>
+                                        </div>
+                                    </div>
+                                  </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="card-body border p-2 mb-3">
+                                    <div class="video-info-grid">
+                                        <div class="channel-picture">
+                                            <img src="Assets/logo/channel_07.jpg" alt=""/>
+                                        </div>
+                                        <div class="video-info ms-5">
+                                            <p class="video-title">
+                                                Mystery of World's Oldest Human | The Secret of Living 120+ years
+                                            </p>
+                                            <p class="video-author" chanel-title="Dhruv Rathee">Dhruv Rathee</p>
+                                            <p class="video-stats">3.7M views &#183; 5 days ago</p>
+                                        </div>
+                                    </div>
+                                  </div>
+                            </div>
+            
+                        </div>
+                    </div>
+                </section>
+
+                <!-- End of audio tab-->
+            </div>
+            <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
+                <!-- Blog tab -->
+
+                <section class="posts mb-4">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md col-lg mb-4 mt-4">
+                                <div class="row">
+                                    <div class="col-md-6 col-lg-6 mb-3">
+                                        <div class="card custom-card post h-100 p-2">
+                                            <div class="card-body">
+                                                <div class="d-flex justify-content-between">
+                                                    <div class="writer d-flex align-items-center mb-3">
+                                                        <img src="Assets/written/img/avatar-2.jpg" width="45px" height="45px" class="img-writer rounded-circle me-2"
+                                                            alt="Alexa Jeffrey">
+                                                        <a href="#" class="writer-name fw-bolder">Alexa Jeffrey</a>
+                                                    </div>
+                                                    <a role="button" data-bs-toggle="tooltip" data-bs-placement="top"
+                                                        title="Save"><i>
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-bookmark" viewBox="0 0 16 16">
+                                                                <path d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1z"/>
+                                                              </svg>
+                                                        </i></a>
+                                                </div>
+                                                <div class="img-container">
+                                                    <a href="/single.html">
+                                                        <img src="Assets/written/img/post-2.jpg" alt="Post 2" class="mb-3 rounded-3"
+                                                            height="200px">
+                                                    </a>
+                                                </div>
+                                                <a href="/single.html" class="fs-6 d-block text-dark fw-bolder">The Best Business
+                                                    Laptops for 2021</a>
+                                                <small class="text-secondary">June 25, 2021 &bullet; 5 min read</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 col-lg-6 mb-3">
+                                        <div class="card custom-card post h-100 p-2">
+                                            <div class="card-body">
+                                                <div class="d-flex justify-content-between">
+                                                    <div class="writer d-flex align-items-center mb-3">
+                                                        <img src="Assets/written/img/avatar-3.jpg" width="45px" height="45px" class="img-writer rounded-circle me-2"
+                                                            alt="Johnny Alexander">
+                                                        <a href="#" class="writer-name fw-bolder">Johnny Alexander</a>
+                                                    </div>
+                                                    <a role="button" data-bs-toggle="tooltip" data-bs-placement="top"
+                                                        title="Save"><i>
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-bookmark" viewBox="0 0 16 16">
+                                                                <path d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1z"/>
+                                                              </svg>
+                                                        </i></a>
+                                                </div>
+                                                <div class="img-container">
+                                                    <a href="/single.html">
+                                                        <img src="Assets/written/img/post-3.jpg" alt="Post 3" class="mb-3 rounded-3"
+                                                            height="200px">
+                                                    </a>
+                                                </div>
+                                                <a href="/single.html" class="fs-6 d-block text-dark fw-bolder">15 Best Songs of
+                                                    2021
+                                                    - The Best
+                                                    Music of
+                                                    the Year
+                                                    So Far</a>
+                                                <small class="text-secondary">June 24, 2021 &bullet; 2 min read</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 col-lg-6 mb-3">
+                                        <div class="card custom-card post h-100 p-2">
+                                            <div class="card-body">
+                                                <div class="d-flex justify-content-between">
+                                                    <div class="writer d-flex align-items-center mb-3">
+                                                        <img src="Assets/written/img/avatar-4.jpg" width="45px" height="45px" class="img-writer rounded-circle me-2"
+                                                            alt="Christine Gibson">
+                                                        <a href="#" class="writer-name fw-bolder">Christine Gibson</a>
+                                                    </div>
+                                                    <a role="button" data-bs-toggle="tooltip" data-bs-placement="top"
+                                                        title="Save"><i>
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-bookmark" viewBox="0 0 16 16">
+                                                                <path d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1z"/>
+                                                              </svg>
+                                                        </i></a>
+                                                </div>
+                                                <div class="img-container">
+                                                    <a href="/single.html">
+                                                        <img src="Assets/written/img/post-6.jpg" alt="Post 6" class="mb-3 rounded-3"
+                                                            height="200px">
+                                                    </a>
+                                                </div>
+                                                <a href="/single.html" class="fs-6 d-block text-dark fw-bolder">9 of The Most Sacred
+                                                    Animals on
+                                                    the Planet</a>
+                                                <small class="text-secondary">June 23, 2021 &bullet; 3 min read</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 col-lg-6 mb-3">
+                                        <div class="card custom-card post h-100 p-2">
+                                            <div class="card-body">
+                                                <div class="d-flex justify-content-between">
+                                                    <div class="writer d-flex align-items-center mb-3">
+                                                        <img src="Assets/written/img/avatar-1.jpg" width="45px" height="45px" class="img-writer rounded-circle me-2"
+                                                            alt="John Doe">
+                                                        <a href="#" class="writer-name fw-bolder">John Doe</a>
+                                                    </div>
+                                                    <a role="button" data-bs-toggle="tooltip" data-bs-placement="top"
+                                                        title="Save"><i>
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-bookmark" viewBox="0 0 16 16">
+                                                                <path d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1z"/>
+                                                              </svg>
+                                                        </i></a>
+                                                </div>
+                                                <div class="img-container">
+                                                    <a href="/single.html">
+                                                        <img src="Assets/written/img/post-7.jpg" alt="Post 7" class="mb-3 rounded-3"
+                                                            height="200px">
+                                                    </a>
+                                                </div>
+                                                <a href="/single.html" class="fs-6 d-block text-dark fw-bolder">10 Best National
+                                                    Forests in the
+                                                    US</a>
+                                                <small class="text-secondary">June 22, 2021 &bullet; 12 min read</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 col-lg-6 mb-3">
+                                        <div class="card custom-card post h-100 p-2">
+                                            <div class="card-body">
+                                                <div class="d-flex justify-content-between">
+                                                    <div class="writer d-flex align-items-center mb-3">
+                                                        <img src="Assets/written/img/avatar-2.jpg" width="45px" height="45px" class="img-writer rounded-circle me-2"
+                                                            alt="Alexa Jeffrey">
+                                                        <a href="#" class="writer-name fw-bolder">Alexa Jeffrey</a>
+                                                    </div>
+                                                    <a role="button" data-bs-toggle="tooltip" data-bs-placement="top"
+                                                        title="Save"><i>
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-bookmark" viewBox="0 0 16 16">
+                                                                <path d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1z"/>
+                                                              </svg>
+                                                        </i></a>
+                                                </div>
+                                                <div class="img-container">
+                                                    <a href="/single.html">
+                                                        <img src="Assets/written/img/post-8.jpg" alt="Post 7" class="mb-3 rounded-3"
+                                                            height="200px">
+                                                    </a>
+                                                </div>
+                                                <a href="/single.html" class="fs-6 d-block text-dark fw-bolder">10 Daily Habits That
+                                                    Can Actually Change Your Life</a>
+                                                <small class="text-secondary">June 21, 2021 &bullet; 9 min read</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 col-lg-6 mb-3">
+                                        <div class="card custom-card post h-100 p-2">
+                                            <div class="card-body">
+                                                <div class="d-flex justify-content-between">
+                                                    <div class="writer d-flex align-items-center mb-3">
+                                                        <img src="Assets/written/img/avatar-4.jpg" width="45px" height="45px" class="img-writer rounded-circle me-2"
+                                                            alt="Christine Gibson">
+                                                        <a href="#" class="writer-name fw-bolder">Christine Gibson</a>
+                                                    </div>
+                                                    <a role="button" data-bs-toggle="tooltip" data-bs-placement="top"
+                                                        title="Save"><i>
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-bookmark" viewBox="0 0 16 16">
+                                                                <path d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1z"/>
+                                                              </svg>
+                                                        </i></a>
+                                                </div>
+                                                <div class="img-container">
+                                                    <a href="/single.html">
+                                                        <img src="Assets/written/img/post-9.jpg" alt="Post 7" class="mb-3 rounded-3"
+                                                            height="200px">
+                                                    </a>
+                                                </div>
+                                                <a href="/single.html" class="fs-6 d-block text-dark fw-bolder">How Joaquin Phoenix
+                                                    Transformed Into The Joker</a>
+                                                <small class="text-secondary">June 21, 2021 &bullet; 5 min read</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- End of blog tab -->
+            </div>
+          </div>
+    </section>
+    <!-- End of contents summary-->
+
+    <!-- Pagination-->
+    <section>
+        <div class="container-fluid mt-4">
+            <nav aria-label="Page navigation example">
+                <ul class="pagination justify-content-center">
+                  <li class="page-item disabled">
+                    <a class="page-link"><p class="text-dark">Previous</p></a>
+                  </li>
+                  <li class="page-item"><a class="page-link" href="#"><p class="text-dark">1</p></a></li>
+                  <li class="page-item"><a class="page-link" href="#"><p class="text-dark">2</p></a></li>
+                  <li class="page-item"><a class="page-link" href="#"><p class="text-dark">3</p></a></li>
+                  <li class="page-item">
+                    <a class="page-link" href="#"><p class="text-dark">Next</p></a>
+                  </li>
+                </ul>
+              </nav>
+        </div>
+    </section>
+    <!-- Pagination end -->
+
+</main>
+
+<footer class="footer">
+    <hr>
+    <div class="footer-intro">
+        <p class="text-dark">&copy; 2024 WestNile Media, all rights reserved</p>
+    </div>
+</footer>
+</body>
+</html>
